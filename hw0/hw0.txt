@@ -1,5 +1,5 @@
 
 1. Python3 установлен
-2. Установил  SublimeText Editor
+2. Установил  PyCharm и SublimeText Editor
 3. Установлен git последней на момент установки версии
 4. Открытый репозиторий создан https://github.com/Val7117/python_homework_cs.git
