@@ -1,0 +1,52 @@
+int/float/complex/str/list/tuple/dict/set:bool
+
+int:bool
+(-inf,0):True
+(0,+inf):True
+0:False
+
+float:bool
+0.0:False
+.0:False
+0.1:True
+.1:True
+
+
+complex:bool
+0.0+0j:False
+0.1+0j:True
+0.0+0.1j:True
+
+
+string:bool
+'any string':True
+"any string":True
+'''any string''':True
+"""any string""":True
+'':False
+' ':True
+"":False
+" ":True
+'''''':False
+''' ''':True
+"""""":False
+""" """:True
+
+
+list:bool
+[]:False
+[1, 2]:True
+[1, 0]:True
+[0, 0]:True
+
+
+tuple:bool
+
+
+dict:bool
+
+
+set:bool
+
+keyword:bool
+None:False
