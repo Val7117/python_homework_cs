@@ -1,9 +1,10 @@
-int/float/complex/str/list/tuple/dict/set:bool
+int/float/complex/str/list/tuple/set/dict:bool
 
 int:bool
 (-inf,0):True
 (0,+inf):True
 0:False
+
 
 float:bool
 0.0:False
@@ -38,15 +39,53 @@ list:bool
 [1, 2]:True
 [1, 0]:True
 [0, 0]:True
+['']:True
+[""]:True
+['''''']:True
+[""""""]:True
+['any items']:True
+["any items"]:True
+['''any items''']:True
+["""any items"""]:True
 
 
 tuple:bool
-
-
-dict:bool
+():False
+(0):False
+(1, 2):True
+(1, 0):True
+(0, 0):True
+(''):False
+(""):False
+(''''''):False
+(""""""):False
+('any items'):True
+("any items"):True
+('''any items'''):True
+("""any items"""):True
 
 
 set:bool
+{0}:True
+{0, 1}:True
+{''}:True
+{""}:True
+{''''''}:True
+{""""""}:True
+{'any items'}:True
+{"any items"}:True
+{'''any items'''}:True
+{"""any items"""}:True
 
-keyword:bool
-None:False
+
+dict:bool
+{}:False
+{'':''}:True
+{"":""}:True
+{'''''':''''''}:True
+{"""""":""""""}:True
+{'any key':'any value'}:True
+{"any key":"any value"}:True
+{'''any key''':'''any value'''}:True
+{"""any key""":"""any value"""}:True
+
