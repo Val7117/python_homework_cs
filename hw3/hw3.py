@@ -24,11 +24,11 @@ while 1:
 # Otherwise continue the cycle for
 
     for i in formatted_data:
-        repeatitions = formatted_data.count(i)
-        if repeatitions > max_num:
+        repeat = formatted_data.count(i)
+        if repeat > max_num:
             popular_words = [i]
-            max_num = repeatitions
-        elif repeatitions == max_num and i not in popular_words:
+            max_num = repeat
+        elif repeat == max_num and i not in popular_words:
             popular_words.append(i)
         else:
             continue
