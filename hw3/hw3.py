@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# In Python 1 is always gives True in boolean
+# In Python 1 always gives True in boolean
 
 while 1:
 
