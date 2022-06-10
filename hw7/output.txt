@@ -1,0 +1,2 @@
+/bin/bash - 2 ; /usr/sbin/nologin - 40 ; /bin/sync - 1 ; /bin/false - 6 ; 
+root:0 adm:104,1000 tty:104 cdrom:1000 sudo:1000 audio:123 dip:1000 plugdev:1000 kvm:1000 lpadmin:1000 scanner:117 lxd:1000 sambashare:1000 ubridge:1000 libvirt:1000 libvirt-qemu:64055 docker:1000 
