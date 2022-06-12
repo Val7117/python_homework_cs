@@ -1,0 +1,11 @@
+
+                        *** Collatz conjecture ***
+
+Natural number: number of steps
+12:9
+3:7
+11:14
+17:12
+77:22
+100:25
+666:113
