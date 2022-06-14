@@ -9,7 +9,7 @@ def letters_range(first_letter, last_letter, step=1):
     result = []
     for i in list(range(lst.index(first_letter), lst.index(last_letter), step)):
         result.append(lst[i])
-    print(result)
+    return print(result)
 
 
 print("letters_range('b', 'w', 2)")
