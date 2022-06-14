@@ -12,6 +12,9 @@ def convert_temp(degrees, unit):
     elif unit == 'c':
         res = (degrees - 32) * 0.5556
         print(f"{degrees}\N{DEGREE SIGN}F = {round(res)}\N{DEGREE SIGN}C")
+    else:
+        print("Incorrect unit. Please choose 'f' or 'c'.")
+
 
 print("Example")
 convert_temp(32, 'c')
