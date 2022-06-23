@@ -34,7 +34,7 @@ class Router:
         Shows IP route table.
     """
 
-# Create two additional dictionaries for storing info about IP table and ip routes.
+    # Create two additional dictionaries for storing info about IP table and ip routes.
     ip_table = dict()
     ip_routes = dict()
 
@@ -137,7 +137,8 @@ class Router:
         if length < len(self.ip_routes):
             return print(f"Adding route to {new_destination} via {new_next_hop} - ok")
         else:
-            return print(f"Adding route to {ipaddress.ip_network(destination, strict=False).compressed} via {ipaddress.ip_interface(next_hop).compressed} - exception")
+            return print(f"Adding route to {ipaddress.ip_network(destination, strict=False).compressed} via \n"
+                         f"{ipaddress.ip_interface(next_hop).compressed} - exception")
 
     def remove_route(self, destination):
         """
@@ -186,14 +187,15 @@ class Router:
 
         # Search through the IP table. If the ip address you want to remove is found, then set IPv4 address
         # as "Not defined". Also delete this IP network from IP route table.
-        # Otherwise return {ip} address is not found in IP table.
+        # Otherwise, return {ip} address is not found in IP table.
+        global rm_net
         for i in self.ip_table:
             if self.ip_table[i] == ipaddress.ip_interface(ip).compressed:
                 self.ip_table.update({i: "Not defined"})
                 for j in self.ip_routes:
                     if j == ipaddress.ip_network(ip, strict=False).compressed:
-                        delete = ipaddress.ip_network(ip, strict=False).compressed
-                self.ip_routes.pop(delete)
+                        rm_net = ipaddress.ip_network(ip, strict=False).compressed
+                self.ip_routes.pop(rm_net)
                 return print(f"{ip} was removed from IP table")
         else:
             return print(f"{ip} address is not found in IP table")
@@ -206,4 +208,3 @@ class Router:
         print("----------------------------------------------------------")
         for j in self.ip_routes:
             print(f"{j}                             {self.ip_routes[j]}")
-
