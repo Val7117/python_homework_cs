@@ -5,12 +5,12 @@ def n_arr(array):
     if length == 1:
         num_of_elem = array[0]
         blue_print = [""] * num_of_elem
-        print(blue_print)
+        return blue_print
     elif length == 2:
         num_of_elem = array[0]
         num_of_selem = array[1]
         blue_print = [[""] * num_of_elem for i in range(num_of_selem)]
-        print(blue_print)
+        return blue_print
     elif length > 2:
         num_of_elem = array[0]
         num_of_selem = array[2]
@@ -19,4 +19,4 @@ def n_arr(array):
         for i in array[3:]:
             key = [res for k in range(i)]
             res = key
-        print(res)
+        return res
