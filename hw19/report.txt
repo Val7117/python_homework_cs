@@ -1,0 +1,37 @@
+Написал два скрипта на Python: upd_client.py, udp_dns_server.py
+Запускаем клиент и сервер.
+
+Далее в отчете будут представлены запуски команд на стороне клиента и результаты, 
+полученные с сервера. На серверной стороне 
+
+./upd_client.py
+
+Enter you name: google.com
+
+142.250.186.110
+
+Enter your domain name: my.google.com
+
+Error: Cannot resolve your address my.google.com. Please, enter the correct domain name.
+
+Enter your domain name: ADD my.google.com:228.228.228.228
+
+You domain my.google.com:228.228.228.228 has been added successfully.
+
+Enter your domain name: my.google.com
+
+228.228.228.228
+
+Enter your domain name: adsf
+
+Error: Cannot resolve your address adsf. Please, enter the correct domain name.
+
+Enter your domain name: ADD domain
+
+Invalid command
+
+Enter your domain name: ADD domain.com:77.77.777.777
+
+Invalid command
+
+Скрипт работает согласно заданию и проверяет введеные команды на ошибки, а также корректность введенных IPv4 адресов.

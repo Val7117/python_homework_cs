@@ -1,0 +1,10 @@
+Logs
+
+UDP DNS Server listening on port 2222
+Request: google.com received from ('127.0.0.1', 40044). Result: 142.250.185.110 sent to ('127.0.0.1', 40044)
+Request: my.google.com received from ('127.0.0.1', 40044). Result: an error message sent to ('127.0.0.1', 40044).
+Request: ADD my.google.com:228.228.228.228 received from ('127.0.0.1', 40044). Result: my.google.com: 228.228.228.228 added to personal domains.
+Request: my.google.com received from ('127.0.0.1', 40044). Result: resolved IPv4 address from personal domain sent to ('127.0.0.1', 40044).
+Request: adsf received from ('127.0.0.1', 40044). Result: an error message sent to ('127.0.0.1', 40044).
+Invalid command: ADD domain from ('127.0.0.1', 40044)
+Invalid command: ADD domain.com:77.77.777.777 from ('127.0.0.1', 40044)
