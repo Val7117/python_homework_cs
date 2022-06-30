@@ -14,6 +14,7 @@ server_socket.bind(('localhost', listening_port))
 info = f"UDP DNS Server listening on port {listening_port}"
 print(info)
 
+# Write 'info' message to logs
 with open("logs.txt", "a") as logs:
     logs.write(f"\n{info}")
 
