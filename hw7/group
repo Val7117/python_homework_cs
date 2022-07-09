@@ -18,7 +18,7 @@ voice:x:22:
 cdrom:x:24:valik
 floppy:x:25:
 tape:x:26:
-sudo:x:27:valik
+sudo:x:27:valik,ben
 audio:x:29:pulse
 dip:x:30:valik
 www-data:x:33:
@@ -79,3 +79,4 @@ libvirt-qemu:x:64055:libvirt-qemu
 libvirt-dnsmasq:x:137:
 docker:x:998:valik
 vboxusers:x:138:
+ben:x:1001:
