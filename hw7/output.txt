@@ -1,2 +1,2 @@
 /bin/bash - 8 ; /usr/sbin/nologin - 40 ; /bin/sync - 1 ; /bin/false - 6 
-adm:1000, sudo:1000, 1001, valik:1000, ben:1001, 1022, 1033, 1044, tom:1110, 1111
+root:0, adm:1000, sudo:1000, 1001, valik:1000, ben:1001, 1022, 1033, 1044, tom:1110, 1111

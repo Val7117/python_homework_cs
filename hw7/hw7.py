@@ -35,7 +35,6 @@ for i in unique_shells:
     string = string + i + ' - ' + str(num) + ' ; '
 string = string[0: -2]      # Get rid of the last space and semicolon '; '
 
-
 # Create two empty dicts
 group_gid_dict = dict()             # group:gid dict
 groupName_users = dict()            # group_names: users_in_this_group dict
@@ -74,7 +73,9 @@ gr_new = ""
 # Formulate the final result string ('res').
 for grName in group_gid_dict:
     for item in group_gid_dict[grName]:
-        if (int(item) >= uid_start) and (int(item) <= uid_end) and grName != gr_new:
+        if grName == 'root':
+            res = res + f"{grName}:{item}, "
+        elif (int(item) >= uid_start) and (int(item) <= uid_end) and grName != gr_new:
             res = res + f"{grName}:{item}, "
             gr_new = grName
         elif (int(item) >= uid_start) and (int(item) <= uid_end):
